@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.estsoft.blogjpa.BlogJpaApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-19T05:28:12" hostname="leetaehees-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.estsoft.blogjpa.BlogJpaApplicationTests" time="0.002"/>
+  <system-out><![CDATA[2024-04-19T14:28:12.776+09:00  INFO 12921 --- [blog-jpa] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.estsoft.blogjpa.BlogJpaApplicationTests]: BlogJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-19T14:28:12.778+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.estsoft.blogjpa.BlogJpaApplication for test class com.estsoft.blogjpa.BlogJpaApplicationTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

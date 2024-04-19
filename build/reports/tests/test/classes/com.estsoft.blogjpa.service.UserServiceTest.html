@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.383s</div>
+<div class="counter">0.394s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,13 @@
 </tr>
 </thead>
 <tr>
+<td class="success">existsTest()</td>
+<td class="success">0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">saveTest()</td>
-<td class="success">0.383s</td>
+<td class="success">0.339s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +95,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:18:49.914 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.estsoft.blogjpa.service.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:18:49.958 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.estsoft.blogjpa.BlogJpaApplication for test class com.estsoft.blogjpa.service.UserServiceTest
+<pre>14:28:10.706 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.estsoft.blogjpa.service.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:28:10.740 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.estsoft.blogjpa.BlogJpaApplication for test class com.estsoft.blogjpa.service.UserServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -101,18 +106,18 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-2024-04-19T14:18:50.086+09:00  INFO 12473 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : Starting UserServiceTest using Java 21.0.2 with PID 12473 (started by lth in /Users/lth/IdeaProjects/blog-jpa)
-2024-04-19T14:18:50.087+09:00  INFO 12473 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-04-19T14:18:50.351+09:00  INFO 12473 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-19T14:18:50.371+09:00  INFO 12473 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
-2024-04-19T14:18:50.548+09:00  INFO 12473 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-19T14:18:50.627+09:00  INFO 12473 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-04-19T14:18:50.627+09:00  INFO 12473 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-19T14:18:50.656+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-19T14:18:50.681+09:00  INFO 12473 --- [blog-jpa] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-19T14:18:50.697+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-19T14:18:50.783+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-19T14:18:51.093+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-19T14:28:10.854+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : Starting UserServiceTest using Java 21.0.2 with PID 12921 (started by lth in /Users/lth/IdeaProjects/blog-jpa)
+2024-04-19T14:28:10.854+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-04-19T14:28:11.079+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-19T14:28:11.099+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2024-04-19T14:28:11.290+09:00  INFO 12921 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-19T14:28:11.359+09:00  INFO 12921 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-19T14:28:11.360+09:00  INFO 12921 --- [blog-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-19T14:28:11.381+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-19T14:28:11.398+09:00  INFO 12921 --- [blog-jpa] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-19T14:28:11.411+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-19T14:28:11.488+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-19T14:28:11.764+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: 
     drop table if exists article cascade 
 Hibernate: 
@@ -134,16 +139,16 @@ Hibernate:
         password varchar(255) not null,
         primary key (id)
     )
-2024-04-19T14:18:51.107+09:00  INFO 12473 --- [blog-jpa] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-19T14:18:51.200+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-19T14:18:51.423+09:00  WARN 12473 --- [blog-jpa] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-19T14:18:51.553+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38c7ad43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ee04ff6, org.springframework.security.web.context.SecurityContextHolderFilter@7ee0dbd1, org.springframework.security.web.header.HeaderWriterFilter@2d2697a8, org.springframework.web.filter.CorsFilter@32fefbe6, org.springframework.security.web.csrf.CsrfFilter@4b4a3114, org.springframework.security.web.authentication.logout.LogoutFilter@3a917e07, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f0a29f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d04adc1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c2812aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e92bded, org.springframework.security.web.access.ExceptionTranslationFilter@5a0c0680, org.springframework.security.web.access.intercept.AuthorizationFilter@30a8ac50]
-2024-04-19T14:18:51.556+09:00  WARN 12473 --- [blog-jpa] [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@796687de. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2024-04-19T14:18:51.556+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@796687de
-2024-04-19T14:18:51.556+09:00  WARN 12473 --- [blog-jpa] [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2024-04-19T14:18:51.556+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/static/**']
-2024-04-19T14:18:51.667+09:00  INFO 12473 --- [blog-jpa] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-04-19T14:18:51.696+09:00  INFO 12473 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : Started UserServiceTest in 1.686 seconds (process running for 2.095)
+2024-04-19T14:28:11.778+09:00  INFO 12921 --- [blog-jpa] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19T14:28:11.873+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-19T14:28:12.098+09:00  WARN 12921 --- [blog-jpa] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-19T14:28:12.228+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bd7829b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4faccb34, org.springframework.security.web.context.SecurityContextHolderFilter@490b8f1e, org.springframework.security.web.header.HeaderWriterFilter@3bbab2c9, org.springframework.web.filter.CorsFilter@2cb4e4b1, org.springframework.security.web.csrf.CsrfFilter@22b581a5, org.springframework.security.web.authentication.logout.LogoutFilter@47b72d3b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73983f07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4eb43d2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@453961d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e3552b0, org.springframework.security.web.access.ExceptionTranslationFilter@32fefbe6, org.springframework.security.web.access.intercept.AuthorizationFilter@b42d1c8]
+2024-04-19T14:28:12.231+09:00  WARN 12921 --- [blog-jpa] [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@79ef8115. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-19T14:28:12.231+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@79ef8115
+2024-04-19T14:28:12.232+09:00  WARN 12921 --- [blog-jpa] [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-04-19T14:28:12.232+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/static/**']
+2024-04-19T14:28:12.341+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-19T14:28:12.372+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.blogjpa.service.UserServiceTest      : Started UserServiceTest in 1.588 seconds (process running for 1.995)
 Hibernate: 
     insert 
     into
@@ -151,7 +156,15 @@ Hibernate:
         (created_at, email, password, id) 
     values
         (?, ?, ?, default)
-1, email: mock_email
+1, email: mock_email132a
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+true
 </pre>
 </span>
 </div>
@@ -173,7 +186,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.6</a> at 2024. 4. 19. 오후 2:18:52</p>
+<a href="http://www.gradle.org">Gradle 8.6</a> at 2024. 4. 19. 오후 2:28:13</p>
 </div>
 </div>
 </body>

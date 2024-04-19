@@ -21,14 +21,14 @@ public class UserServiceTest {
     @Test
     public void saveTest() {
         // given:
-        AddUserRequest request = new AddUserRequest("mock_email", "mock_pw");
+        AddUserRequest request = new AddUserRequest("mock_email132a", "mock_pw");
 
         // when:
         User user = userService.save(request);
 
         // then:
-        assertThat(user.getEmail()).isEqualTo("mock_email");
-        assertThat(user.getUsername()).isEqualTo("mock_email");
+        assertThat(user.getEmail()).isEqualTo("mock_email132a");
+        assertThat(user.getUsername()).isEqualTo("mock_email132a");
     }
 
     @Test

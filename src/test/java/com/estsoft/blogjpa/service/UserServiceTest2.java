@@ -29,7 +29,7 @@ class UserServiceTest2 {
     @Test
     void testSave() {
         // given
-        AddUserRequest request = new AddUserRequest("mock_email@1", "pw");
+        AddUserRequest request = new AddUserRequest("mock_email213", "pw");
         String encodePassword = encoder.encode(request.getPassword());
 
         doReturn(new User(request.getEmail(), encodePassword))
@@ -42,7 +42,7 @@ class UserServiceTest2 {
         assertThat(returnUser.getEmail()).isEqualTo(request.getEmail());
         assertThat(returnUser.getPassword()).isEqualTo(encodePassword);
 
-        verify(encoder, times(2)).encode(any(String.class));
+        verify(encoder, times(1)).encode(any(String.class));
         verify(userRepository, times(1)).save(any(User.class));
     }
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.estsoft.blogjpa.tdd.AccountTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-19T05:28:13" hostname="leetaehees-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="출금" classname="com.estsoft.blogjpa.tdd.AccountTest" time="0.0"/>
+  <testcase name="잔고 조회" classname="com.estsoft.blogjpa.tdd.AccountTest" time="0.001"/>
+  <testcase name="입금" classname="com.estsoft.blogjpa.tdd.AccountTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

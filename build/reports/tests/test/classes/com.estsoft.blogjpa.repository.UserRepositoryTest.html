@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.estsoft.blogjpa.repository.html">com.estsoft.blogjpa.repository</a> &gt; UserRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.012s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">사용자 전체 조회</td>
+<td class="success">testFindAll()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">이메일로 사용자 조회</td>
+<td class="success">testFindByEmail()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-04-19T14:28:13.169+09:00  INFO 12921 --- [blog-jpa] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.estsoft.blogjpa.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-19T14:28:13.174+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.estsoft.blogjpa.BlogJpaApplication for test class com.estsoft.blogjpa.repository.UserRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-04-19T14:28:13.182+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.repository.UserRepositoryTest      : Starting UserRepositoryTest using Java 21.0.2 with PID 12921 (started by lth in /Users/lth/IdeaProjects/blog-jpa)
+2024-04-19T14:28:13.182+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.repository.UserRepositoryTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-04-19T14:28:13.212+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-19T14:28:13.216+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2024-04-19T14:28:13.220+09:00  INFO 12921 --- [blog-jpa] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-04-19T14:28:13.228+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f8c064f7-7d9f-416a-aea4-5d7ec127e65b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-04-19T14:28:13.234+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-19T14:28:13.235+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-19T14:28:13.237+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-19T14:28:13.253+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists article cascade 
+Hibernate: 
+    drop table if exists users cascade 
+Hibernate: 
+    create table article (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        updated_at timestamp(6),
+        content varchar(255) not null,
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        email varchar(255) not null unique,
+        password varchar(255) not null,
+        primary key (id)
+    )
+2024-04-19T14:28:13.256+09:00  INFO 12921 --- [blog-jpa] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19T14:28:13.281+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.repository.UserRepositoryTest      : Started UserRepositoryTest in 0.106 seconds (process running for 2.904)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, password, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password 
+    from
+        users u1_0
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, password, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2, pw: mock_pw
+2, pw: mock_pw
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at 2024. 4. 19. 오후 2:28:13</p>
+</div>
+</div>
+</body>
+</html>

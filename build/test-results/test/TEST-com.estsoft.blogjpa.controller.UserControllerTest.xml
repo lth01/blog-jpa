@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.estsoft.blogjpa.controller.UserControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-19T05:28:13" hostname="leetaehees-MacBook-Pro.local" time="0.026">
+  <properties/>
+  <testcase name="signup()" classname="com.estsoft.blogjpa.controller.UserControllerTest" time="0.026"/>
+  <system-out><![CDATA[2024-04-19T14:28:13.137+09:00  INFO 12921 --- [blog-jpa] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.estsoft.blogjpa.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-19T14:28:13.139+09:00  INFO 12921 --- [blog-jpa] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.estsoft.blogjpa.BlogJpaApplication for test class com.estsoft.blogjpa.controller.UserControllerTest
+2024-04-19T14:28:13.141+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-19T14:28:13.141+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-19T14:28:13.141+09:00  INFO 12921 --- [blog-jpa] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-04-19T14:28:13.141+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.i.MethodPrintInterceptor           : MethodPrintInterceptor prehandle()
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, password, id) 
+    values
+        (?, ?, ?, default)
+2024-04-19T14:28:13.147+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.i.MethodPrintInterceptor           : MethodPrintInterceptor postHandle() - signup
+2024-04-19T14:28:13.149+09:00  INFO 12921 --- [blog-jpa] [    Test worker] c.e.b.i.MethodPrintInterceptor           : MethodPrintInterceptor afterCompletion()
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

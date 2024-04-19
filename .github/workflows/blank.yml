@@ -45,4 +45,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Upload to S3
-        run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://content-thlee97/$GITHUB_SHA.zip
+        run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://thlee-content/$GITHUB_SHA.zip

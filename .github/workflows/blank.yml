@@ -34,9 +34,8 @@ jobs:
         run: ./gradlew build
 
       - name: Make zip file
-        uses: montudor/action-zip@v1
-        with:
-          args: zip -r ./$GITHUB_SHA.zip
+        run: zip -r ./$GITHUB_SHA.zip .
+        shell: bash
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1

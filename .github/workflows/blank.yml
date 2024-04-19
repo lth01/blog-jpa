@@ -7,26 +7,7 @@ on:
     branches: [ "develop" ]
 
 jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Check out Repository
-#        uses: actions/checkout@v4
-#
-#      - name: set up JDK 17
-#        uses : actions/setup-java@v4
-#        with:
-#          java-version: '17'
-#          distribution: 'temurin'
-#          cache: gradle
-#      - name: Grant excute permission for gradlew
-#        run: chmod +x gradlew
-#
-#      - name: Test with Gradle
-#        run: ./gradlew test
-
   build:
-#    needs: test
     runs-on: ubuntu-latest
     permissions:
       contents: read

@@ -15,6 +15,6 @@ public class UserService {
 
     public User save(AddUserRequest request) {
         return userRepository.save(new User(
-                request.getEmail(), encoder.encode(request.getPassword())));
+                request.getEmail(), request.getPassword()));
     }
 }

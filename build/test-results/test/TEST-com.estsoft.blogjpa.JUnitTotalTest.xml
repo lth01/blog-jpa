@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.estsoft.blogjpa.JUnitTotalTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-19T04:39:38" hostname="leetaehees-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="test1()" classname="com.estsoft.blogjpa.JUnitTotalTest" time="0.004"/>
+  <testcase name="test2()" classname="com.estsoft.blogjpa.JUnitTotalTest" time="0.001"/>
+  <testcase name="test3()" classname="com.estsoft.blogjpa.JUnitTotalTest" time="0.002"/>
+  <system-out><![CDATA[@BeforeAll
+@BeforeEach
+test1{test1=value1}
+@AfterEach
+@BeforeEach
+test2{test2=value2}
+@AfterEach
+@BeforeEach
+test3{test3=value3}
+@AfterEach
+@AfterAll
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
